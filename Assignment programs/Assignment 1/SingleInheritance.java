@@ -18,15 +18,14 @@ public void eat() {
     }
 }
 class Dog extends Animal {
-    private String breed;
-
-    public Dog(String name, int age, String breed) {
+        private string food;
+    public Dog(String name, int age, String food) {
         super(name, age);
-        this.breed = breed;
+        this.food = food;
     }
 
     public void showDetails() {
-        System.out.println(getName() + " is " + getAge() + " years old and breed " + this.breed);
+        System.out.println(getName() + " is " + getAge() + " years old and eats " + this.food);
     }
 }
 public class SingleInheritance {
