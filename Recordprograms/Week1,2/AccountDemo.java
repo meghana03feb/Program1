@@ -1,25 +1,24 @@
 package core_java;
 
 class Account {
-    int accountNumber;
-    double balance;
-    String accountType;
+    int no;
+    double bal;
+    String type;
 
-    Account(int accountNumber, double balance, String accountType) {
-        this.accountNumber = accountNumber;
-        this.balance = balance;
-        this.accountType = accountType;
+    Account(int no, double bal, String type) {
+        this.no = no;this.bal = bal;
+        this.type = type;
     }
 
-    void deposit(double amount) {
-        balance += amount;
-        System.out.println("Deposited: " + amount);
+    void deposit(double amt) {
+        balance += amt;
+        System.out.println("Deposited: " + amt);
     }
 
-    void withdraw(double amount) {
-        if (amount <= balance) {
-            balance -= amount;
-            System.out.println("Withdrawn: " + amount);
+    void withdraw(double amt) {
+        if (amt <= bal) {
+            bal -= amt;
+            System.out.println("Withdrawn: " + amt);
         } else {
             System.out.println("Insufficient Balance");
         }
@@ -31,9 +30,9 @@ class Account {
     }
 
     void display() {
-        System.out.println("Account Number : " + accountNumber);
-        System.out.println("Account Type   : " + accountType);
-        System.out.println("Balance        : " + balance);
+        System.out.println("No : " + no);
+        System.out.println(" Type   : " + type);
+        System.out.println("Balance        : " + bal);
     }
 }
 
@@ -42,14 +41,14 @@ public class AccountDemo {
 
         Account acc = new Account(1001, 10000, "Savings");
 
-        acc.display();
+        a.display();
 
-        acc.deposit(2000);
+        a.deposit(2000);
 
-        acc.withdraw(3000);
+        a.withdraw(3000);
 
-        acc.calculateInterest();
+        a.calculateInterest();
 
-        acc.display();
+        a.display();
     }
 }
