@@ -31,7 +31,7 @@ class D implements B, C {
         System.out.println("Message 4");
     }
 }
-public class Main {
+public class HybridInheritance {
     public static void main(String[] args) {
         D obj = new D();
         
