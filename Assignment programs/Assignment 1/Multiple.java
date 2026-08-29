@@ -24,6 +24,6 @@ interface I2{
     m.student1();
     m.student2();
     m.student3();
-      System.out.println(ai.a);
+      System.out.println(m.a);
     }
   }
