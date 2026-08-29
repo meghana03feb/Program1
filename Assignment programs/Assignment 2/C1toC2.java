@@ -4,13 +4,15 @@ class C2 {
 void msg2() {
         System.out.println("Message from C2");
     }
+ public int getA(){
+  return a;
 }
 
 class C1 extends C2 {
     void msg1() {
         System.out.println("Message from C1");
+        System.out.println("Value of a: "+getA());
     }
-    System.out.println(super.a);
 }
 
 public class C1toC2 {
