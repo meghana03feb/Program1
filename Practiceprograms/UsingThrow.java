@@ -1,6 +1,6 @@
 package core_java;
 import java.util.Scanner;
-public class UsingThrows {
+public class UsingThrow {
      public static void main(String[] args){
     	 System.out.println("enter v value:");
        try {
@@ -12,7 +12,7 @@ public class UsingThrows {
         	   System.out.println("satisfied");
            }
        }catch(Exception e) {
-    	   System.out.println("Always v value except 5");
+    	   System.out.println("e.getMessage");
        }
     	 
     	 
