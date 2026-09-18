@@ -1,6 +1,6 @@
 package core_java;
 import java.util.Scanner;
-
+// Interface defines the common salary calculation method
 interface Employee {
     void calculateSalary();
 }
@@ -10,6 +10,7 @@ class RegularEmployee implements Employee {
     int hra = 15000;
     int ta = 5000;
 
+    // Calculates and displays regular employee salary
     public void calculateSalary() {
         int total = basicPay + hra + ta;
 
@@ -24,7 +25,7 @@ class RegularEmployee implements Employee {
 class ContractEmployee implements Employee {
     int basicPay = 12000;
     int ta = 3000;
-
+// Calculates and displays contract employee salary
     public void calculateSalary() {
         int total = basicPay + ta;
 
@@ -45,7 +46,7 @@ public class EmployeePayroll {
         String type = sc.nextLine();
 
         Employee emp;
-
+// Creates RegularEmployee object based on user input
         if (type.equalsIgnoreCase("Regular")) {
             emp = new RegularEmployee();
             emp.calculateSalary();
